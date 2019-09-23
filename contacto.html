@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mateskool | Contacto</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="JS/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <!-- Titulo/Logo -->
+    <div class="fondo">
+            <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-xs-12 col-lg-4" id="titulopag">
+                <img src="img/planeta.png" alt="" width=16% height=auto> 
+                Mateskool
+            </div>
+            <div class="col-lg-4"></div>
+            </div>
+    </div>
+    <!-- Titulo/Logo -->
+    <!-- Inicio -->
+    <div class="row" id="inicio">
+            <!-- Menu -->
+            <div class="col-xs-12 col-lg-12">
+                <aside id="aside"> 
+                    <ul class="row">
+                        <li class="col-xs-12 col-lg-2"><a href="Inicio.html">Inicio</a></li>
+                        <li class="col-xs-12 col-lg-2"><a href="Primero.html">Primero</a></li>
+                        <li class="col-xs-12 col-lg-2"><a href="Segundo.html">Segundo</a></li>
+                        <li class="col-xs-12 col-lg-2"><a href="Tercero.html">Tercero</a></li>
+                        <li class="col-xs-12 col-lg-2"><a href="Cuarto.html">Cuarto</a></li>
+                        <li class="col-xs-12 col-lg-2" style="float:right"><a class="active" href="contacto.html">Contactenos</a></li>
+                    </ul>
+                </aside>    
+            </div> 
+            <!-- Menu -->
+        <!--Formulario-->
+        <div class="row" >
+
+            <div class="col-xs-12 col-lg-4 centrarImagen" > 
+                <img src="img/contacto/escribiendo.png" alt="" width=25% >
+            </div>    
+             
+            <div class="col-xs-12 col-lg-4"> 
+                <div class="tituloin">Ingrese sus datos</div> 
+                <form  class="formulario" action="" method="POST">
+                    <label class="label" for="nombre">Nombre: </label><br>
+                    <input type="text" name="nombre" id="nombre" size="26" placeholder="Ingrese nombre" value="" onblur="javascript:Validar();"><br>
+                    <div id="Anombre"></div>
+                    <label class="label" for="apellidos">Apellidos: </label><br>
+                    <input type="text" name="apellidos" id="apellidos" size="26" placeholder="Ingrese Apellido" value="" onblur="javascript:Validar();"><br>
+                    <div id="Aapellido"></div>
+                    <label class="label" for="direccion">Dirección: </label> <br>
+                    <input type="text" name="direccion" id="direccion" size="26"  placeholder="Ingrese direccion" value="" onblur="javascript:Validar();"><br>
+                    <div id="Adireccion"></div>
+                    <label class="label" for="Email">Email: </label> <br>
+                    <input type="text" name="email" id="email" size="26" placeholder="Ingrese email" value="" onblur="javascript:Validar();"></br>
+                    <div id="Aemail"></div>
+                    <label class="label" for="telefono">Telefono: </label> <br>
+                    <label class="label" for="telefono">+56 9</label>
+                    <input type="number" id="telefono"  name="telefono" placeholder="Ingrese telefono" value="" onblur="javascript:Validar();"><br>
+                    <div id="Atelefono"></div>
+                    <input type="submit" class="boton" value="Enviar" onclick="Enviar()"><br>
+                </form>
+            </div>
+            <div class="col-xs-12 col-lg-4 centrarImagen"> 
+                    <img src="img/contacto/escribiendo.png" alt="" width=25%> 
+            </div>  
+        </div>
+        <!--Formulario-->
+    </div>
+    <!-- Inicio -->
+    <!-- Footer -->
+    <footer class="fondo">
+    <!-- Slider -->
+    <div class="slide-contenedor" id="slider">
+        <!-- Imagenes -->
+        <div class="mySlides fade">
+            <a href="https://www.instagram.com/duocuc_cl/" onclick="Instagram()">
+            <img src="img/slider/Instagram.png" style="width:100%">
+            </a>
+        </div>
+        
+        <div class="mySlides fade">
+            <a href="https://www.facebook.com/DuocUC/" onclick="Facebook()">
+            <img src="img/slider/Facebook.png" style="width:100%">
+            </a>
+        </div>
+        
+        <div class="mySlides fade">
+            <a href="https://twitter.com/DuocUC" onclick="Twitter()">
+            <img src="img/slider/Twitter.png" style="width:100%">
+        </a>
+        </div>
+        
+        <!-- Botones -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- Circulos -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script src="js/script.js"></script>
+    </footer>
+    <!-- Footer -->  
+</body>
+</html>

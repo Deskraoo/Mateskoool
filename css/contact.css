@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+
+/*Fondo*/
+body{
+    background: #3399FF;
+}
+
+/*Fondo cajas*/
+.fondo{
+    background: #1A5276;
+}
+
+/*Borde*/
+#inicio{
+    background: #FFFFFF;
+    border: 1rem solid #1A5276;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+/*Titulo Pagina*/
+#titulopag{
+    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*Titulo Inicio*/
+.tituloin{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color:  #1A5276;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*labels*/
+.label{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #1A5276;
+}
+
+/*Aside*/
+#aside{
+    border-top: 2px solid #000000;
+    margin-left: -1.25%;
+    width: 102.5%;
+}
+
+/*Contenedor nav*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1A5276;
+}
+
+/*Barra nav*/
+.whitebar{
+    float: left;
+
+}
+/*navigator*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*lista navigator*/
+li {
+    float: left;
+
+}
+/*Boton*/
+.active {
+    background-color: #FFFFFF;
+    color: #1A5276;
+}
+
+.textoform{
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.centrarImagen{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.formulario{
+    text-align: center;
+    width:100%;
+    margin-bottom: 6rem;
+}
+
+.label{
+    font-family: 'Lexend Deca', sans-serif;
+}
+/*alertas por campo*/
+#Anombre{
+    font-family: 'Lexend Deca', sans-serif;
+    color:rgb(221, 17, 17);
+    display: none;
+    text-align: center;
+}
+#Aapellido{
+    font-family: 'Lexend Deca', sans-serif;
+    color:rgb(221, 17, 17);
+    display: none;
+    text-align: center;
+}
+#Adireccion{
+    font-family: 'Lexend Deca', sans-serif;
+    color:rgb(221, 17, 17);
+    display: none;
+    text-align: center;
+}
+#Aemail{
+    font-family: 'Lexend Deca', sans-serif;
+    color:rgb(221, 17, 17);
+    display: none;
+    text-align: center;
+}
+#Atelefono{
+    font-family: 'Lexend Deca', sans-serif;
+    color:rgb(221, 17, 17);
+    display: none;
+    text-align: center;
+}
+
+
+/*Slider*/
+#slider{
+    box-sizing:border-box
+}
+
+/* Contenido del slider */
+.slide-contenedor {
+    border: 0.2rem solid #f2f2f2;
+    max-width: 82rem;
+    position: relative;
+    margin: auto;
+}
+
+/* Esconder imagenes por default */
+.mySlides {
+    display: none;
+}
+
+/* Botones atras y adelante */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* mover boton a la derecha */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* Color al boton seleccionado */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Animacion Fade */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
