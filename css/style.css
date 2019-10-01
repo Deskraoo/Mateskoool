@@ -152,6 +152,8 @@ li {
 }
 
 
+
+
 /*Fotos centradas**** con la fotocen de abajo queda mejor centrado*/
 .fotoscen{
     margin-top: 2rem;
@@ -165,6 +167,33 @@ li {
     margin-left: auto;
     margin-right: auto;
 }
+
+#cerebro{
+    width: 50%;
+    height: auto;
+}
+
+#barras{
+    width: 45%;
+    height: auto;
+}
+
+#barras{
+    width: 45%;
+    height: auto;
+}
+
+#reloj{
+    width: 41%;
+    height: auto;
+}
+
+#gorro{
+    width: 39.5%;
+    height: auto;
+}
+
+
 
 /*Slider*/
 #slider{
