@@ -168,18 +168,43 @@ li {
     margin-right: auto;
 }
 
-#cerebro{
+.width100{
+    width: 100%;
+    height: auto;
+}
+
+.width90{
+    width: 90%;
+    height: auto;
+}
+
+.width80{
+    width: 80%;
+    height: auto;
+}
+
+.width60{
+    width: 60%;
+    height: auto;
+}
+
+.width50{
     width: 50%;
     height: auto;
 }
 
-#barras{
+.width45{
     width: 45%;
     height: auto;
 }
 
-#barras{
-    width: 45%;
+.width40{
+    width: 40%;
+    height: auto;
+}
+
+.width25{
+    width: 25%;
     height: auto;
 }
 
@@ -198,10 +223,7 @@ li {
     height: auto;
 }
 
-#width100{
-    width: 100%;
-    height: auto;
-}
+
 
 
 
