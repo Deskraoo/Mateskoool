@@ -105,6 +105,11 @@ li {
     height: auto;
 }
 
+#planeta{
+    width: 16%;
+    height: auto;
+}
+
 .formulario{
     text-align: center;
     width:100%;
