@@ -95,6 +95,16 @@ li {
     text-align: center;
 }
 
+.width100{
+    width: 100%;
+    height: auto;
+}
+
+.width25{
+    width: 25%;
+    height: auto;
+}
+
 .formulario{
     text-align: center;
     width:100%;
