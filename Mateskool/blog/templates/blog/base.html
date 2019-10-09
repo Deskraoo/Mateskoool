@@ -8,15 +8,17 @@
 
     </head>
     <body>
-        <h1>Lista de Post</h1>
-        {% for post in posts %}
-            <div>
-                <p> publicado: {{ post.published_date }}</p>
-                <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
             </div>
-        {% endfor %}
-    
-        
+        </div>
     </body>
+
 </html>
