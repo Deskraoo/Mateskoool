@@ -70,4 +70,3 @@ def par_impar(request):
 def suma_resta(request):
     return render(request, 'blog/Suma-Resta.html')
 
-

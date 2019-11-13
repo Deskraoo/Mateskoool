@@ -1,138 +1,133 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mateskool | Inicio</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/style2.css">
     <link rel="stylesheet" href="static/css/flexboxgrid.min.css">
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/JS/jquery-3.4.1.min.js"></script>
+    <script src="static/JS/bootstrap.min.js"></script>
 </head>
-<body>
-    <!-- Titulo/Logo -->
-    <div class="fondo">
+<header>
+    <!-- Barra de navegación -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong>Mateskool</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Planes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item avatar">
+                    <a class="nav-link p-0" href="#">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+                        alt="avatar image" height="35">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Barra de navegación -->
+</header>
+<!-- Contenido -->
+<body id="imagenfondo">
+    <blockquote class="blockquote text-center alineaciontitulo">
+        <p class="mb-0 textotitulo ">Aprende Matematicas con nosotros</p>            
+    </blockquote>
+    <div class="rounded-lg parrafo">
+        <p class="textoparrafo"> Este curso contiene videos cortos de temas completos, dinámicos y con un método fácil con estrategias para resolver los problemas 
+            matemáticos a los que te enfrentas en tu vida escolar diaria. Los temas del curso se presentan en forma gradual de acuerdo a los programas establecidos 
+            por las instituciones de educación y a la práctica de la enseñanza en las matemáticas.
+        </p>
+    </div>
+    <blockquote class="blockquote text-center alineaciontitulo">
+        <p class="mb-0 textotitulo ">Hechale un vistazo a lo que puedes aprender</p>            
+    </blockquote>
+    <div class="col-xs-12 col-lg-12">           
         <div class="row">
-        <div class="col-lg-4"></div>
-        <div class="col-xs-12 col-lg-4" id="titulopag">
-            <img src="img/0inicio/planeta.png" alt="" id="planeta">
-            Mateskool
+            <div class="col-xs-2 col-lg-2 rounded-lg parrafo view zoom"><a href="{% url 'numeros' %}"><img  src="static/img/0inicio/numeros.png" alt="" class="width100"></a></div>
+            <div class="col-xs-2 col-lg-2 rounded-lg parrafo zoom"><a href="Par-Impar.html"><img src="static/img/0inicio/parimpar.png" alt="" class="width100" ></a></div>
+            <div class="col-xs-2 col-lg-2 rounded-lg parrafo zoom"><a href="Clasificacion-Seriacion.html"><img src="static/img/0inicio/seriacion.png" alt="" class="width100" ></a></div>
+            <div class="col-xs-2 col-lg-2 rounded-lg parrafo zoom"><a href="Agrupacion-Numerica.html"><img src="static/img/0inicio/agrupacion.png" alt="" class="width100" ></a></div>
         </div>
-        <div class="col-lg-4"></div>
+        <div class="row">
+            <div class="col-xs-2 col-lg-2 rounded-lg parrafo zoom"><a href="Suma-Resta.html"><img src="static/img/0inicio/sumaresta.png" alt="" class="width100" ></a></div>
+            <div class="col-xs-2 col-lg-2 rounded-lg parrafo zoom"><a href="Multiplicacion-Division.html"><img src="static/img/0inicio/divisionmulti.png" alt="" class="width100" ></a></div>
+            <div class="col-xs-2 col-lg-2 rounded-lg parrafo zoom"><a href="Figuras-Geometricas.html"><img src="static/img/0inicio/figuras.png" alt="" class="width100" ></a></div>
+            <div class="col-xs-2 col-lg-2 rounded-lg parrafo zoom"><a href="Clasificacion-Numerica.html"><img src="static/img/0inicio/clasificacion.png" alt="" class="width100" ></a></div>
         </div>
     </div>
-    <!-- Titulo/Logo -->
-    <!-- Inicio -->
-    <div class="row" id="inicio">
-        <!-- Menu -->
-        <div class="col-xs-12 col-lg-12">
-            <nav id="aside"> 
-                <div class="row">
-                    <div class="col-xs-12 col-lg-2"><a href="Inicio.html"><img  src="static/img/0inicio/inicio.png" alt="" class="fotosex width25"></a></div>
-                </div>
-            </nav>    
-        </div>
-        <!-- Menu -->
-        <!-- Contenido -->
-        <div class="col-xs-12 col-lg-12 ">
-            
-            <div class="row">
-                <div class="col-xs-2 col-lg-2 "><a href="Numeros.html"><img  src="static/img/0inicio/numbers.jpg" alt="" class="fotosex width100"></a></li>Numeros</div>
-                <div class="col-xs-1 col-lg-1 "></div>
-                <div class="col-xs-2 col-lg-2 "><a href="Par-Impar.html"><img src="static/img/0inicio/parimpar.jpg" alt="" class="fotosex width100" ></a></li>Par/Impar</div>
-                <div class="col-xs-1 col-lg-1 "></div>
-                <div class="col-xs-2 col-lg-2 "><a href="Clasificacion-Seriacion.html"><img src="static/img/0inicio/Clasificacion-seriacion.jpg" alt="" class="fotosex width100" ></a></li>Clasificacion/Seriacion</div>
-                <div class="col-xs-1 col-lg-1 "></div>
-                <div class="col-xs-2 col-lg-2 "><a href="Agrupacion-Numerica.html"><img src="static/img/0inicio/Agrupacion-numerica.jpg" alt="" class="fotosex width100" ></a></li>Agrupacion Numerica</div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-2 col-lg-2 "><a href="Suma-Resta.html"><img src="static/img/0inicio/Suma-Resta.jpg" alt="" class="fotosex width100" ></a></li>Suma/Resta</div>
-                <div class="col-xs-1 col-lg-1 "></div>
-                <div class="col-xs-2 col-lg-2 "><a href="Multiplicacion-Division.html"><img src="static/img/0inicio/Multiplicacion-Division.jpg" alt="" class="fotosex width100" ></a></li>Multiplicacion/Division</div>
-                <div class="col-xs-1 col-lg-1 "></div>
-                <div class="col-xs-2 col-lg-2 "><a href="Figuras-Geometricas.html"><img src="static/img/0inicio/Figuras-Geometricas.jpg" alt="" class="fotosex width100" ></a></li>Figuras Geometricas</div>
-                <div class="col-xs-1 col-lg-1 "></div>
-                <div class="col-xs-2 col-lg-2 "><a href="Clasificacion-Numerica.html"><img src="static/img/0inicio/Clasificacion-Numerica.png" alt="" class="fotosex width100" ></a></li>Clasificacion Numerica</div>
-            </div>
-        </div>
-        <!-- Contenido -->
+<!-- Contenido -->
+<!-- Footer -->
+<footer class="page-footer font-small footer">
+     
+    <hr>
+    
+    <!-- Registro -->
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+        <h5 class="mb-1 letrablanca">Unete a Mateskool</h5>
+        </li>
+        <li class="list-inline-item">
+        <a href="#!" class="btn btn-danger btn-rounded">Registrate</a>
+        </li>
+    </ul>
+    <!-- Registro -->
+    
+    <hr>
+    
+    <!-- Redes Sociales -->
+    <ul class="list-unstyled list-inline text-center ">
+        <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f"> </i>
+        </a>
+        </li>
+        <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
+        </a>
+        </li>
+        <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g"> </i>
+        </a>
+        </li>
+        <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+        </a>
+        </li>
+        <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble"> </i>
+        </a>
+        </li>
+    </ul>
+    <!-- Redes Sociales -->
+    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 letrablanca">© 2019 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> Mateskool.com</a>
     </div>
-    <!-- Inicio -->
-    <!-- Informacion Extra -->
-        <div class="fondo">
-            <div class="row">
-                <div class="col-xs-12 col-lg-3">
-                    <img src="static/img/0inicio/cerebro.png" alt="" class="fotosex width50" >
-                    <h1 class="titulosex">Logica y Razonamiento</h1>
-                    <p class="textoex">
-                    Es Mucho más que calculo mental. El alumno desarrolla habilidades para resolver problemas y pensamiento crítico, mientras mejora su comprensión lectora  
-                    </p>
-                </div>
-                <div class="col-xs-12 col-lg-3">
-                    <img src="static/img/0inicio/barras.png" alt="" class="fotosex width45">
-                    <h1 class="titulosex">Inteligencia Artificial</h1>
-                    <p class="textoex">
-                    Con el metodo de inteligencia artificial su hijo progresa a su propio ritmo, sin frustración, desarrollando confianza en sí mismo y una actitud positiva hacia las matemáticas
-                    </p>
-                </div>
-                <div class="col-xs-12 col-lg-3">
-                    <img src="static/img/0inicio/reloj.png" alt="" class="fotosex" id="reloj">
-                    <h1 class="titulosex">15 Minutos</h1>
-                    <p class="textoex">
-                        15 minutos al dia, basta con una sesión al dia con máxima concentración. Sin desplazamientos ni horarios. Desde el PC o tableta.
-                    </p>
-                </div>
-                <div class="col-xs-12 col-lg-3">
-                    <img src="static/img/0inicio/gorro.png" alt="" class="fotosom" id="gorro">
-                    <h1 class="titulosex">Más rápido que en el colegio</h1>
-                    <p class="textoex">
-                        No va en paralelo al plan de estudios oficial. Prepara a su hijo para avanzar más rápido que en el colegio
-                    </p>
-                </div>
-            </div>
-        </div>
-    <!-- Informacion Extra -->
-    <!-- Footer -->
-    <footer class="fondo">
-    <!-- Slider -->
-    <div class="slide-contenedor" id="slider">
-        <!-- Imagenes -->
-        <div class="mySlides fade">
-          <a href="https://www.instagram.com/duocuc_cl/" onclick="Instagram()">
-            <img src="static/img/slider/Instagram.png" alt="" class="width100">
-          </a>
-        </div>
-      
-        <div class="mySlides fade">
-          <a href="https://www.facebook.com/DuocUC/" onclick="Facebook()">
-            <img src="static/img/slider/Facebook.png" alt="" class="width100">
-          </a>
-        </div>
-      
-        <div class="mySlides fade">
-          <a href="https://twitter.com/DuocUC" onclick="Twitter()">
-            <img src="static/img/slider/Twitter.png" alt="" class="width100">
-          </a>
-        </div>
-      
-        <!-- Botones -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-      
-      <!-- Circulos -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-      <script src="static/js/script.js"></script>
+    <!-- Copyright -->
+    
     </footer>
-    <!-- Footer -->          
+    <!-- Footer -->
 </body>
 </html>

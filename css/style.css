@@ -3,6 +3,11 @@ body{
     background: #3399FF;
 }
 
+div{
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+}
+
 /*Fondo cajas*/
 .fondo{
     background: #1A5276;
@@ -73,6 +78,7 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 /*lista navigator*/
 li {
     float: left;
