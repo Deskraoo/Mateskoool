@@ -1,0 +1,45 @@
+#fondo{ 
+    background-image: url("https://cdn.hipwallpaper.com/i/1/92/w2hPOo.jpg");
+}
+
+.textoparrafo{
+    margin-left: 1%;
+    margin-top: 0.3%;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.parrafo{
+    border: 0.2rem solid #595959;
+    border-radius: 50%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 0%;
+    background-color: rgba(140, 142, 143, 0.9);    
+}
+
+.alineaciontitulo{
+    margin-top: 5rem;
+}
+
+.textotitulo{
+    color: #ffffff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 4rem;
+}
+
+.width100{
+    width: 100%;
+    height: auto;
+}
+
+.footer{
+    background-color: #595959;
+}
+
+.letrablanca{
+    color: #ffffff;
+}
+
