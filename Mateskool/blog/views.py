@@ -43,4 +43,31 @@ def post_edit(request, pk):
 def inicio(request):
     return render(request, 'blog/inicio.html')
 
+def agrupacion_numerica(request):
+    return render(request, 'blog/Agrupacion-Numerica.html')
+
+def clasificacion_numerica(request):
+    return render(request, 'blog/Clasificacion-Numerica.html')
+
+def clasificacion_seriacion(request):
+    return render(request, 'blog/Clasificacion-Seriacion.html')
+
+def figuras_geometricas(request):
+    return render(request, 'blog/Figuras-Geometricas.html')
+
+def contacto(request):
+    return render(request, 'blog/contacto.html')
+
+def multiplicacion_division(request):
+    return render(request, 'blog/Multiplicacion-Division.html')
+
+def numeros(request):
+    return render(request, 'blog/Numeros.html')
+
+def par_impar(request):
+    return render(request, 'blog/Par-Impar.html')
+
+def suma_resta(request):
+    return render(request, 'blog/Suma-Resta.html')
+
 
