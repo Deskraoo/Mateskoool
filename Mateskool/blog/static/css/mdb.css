@@ -43,13 +43,16 @@
     margin-bottom: 5%;
 }
 
-.widthnumeros{
-    width: 100%;
+.width40{
+    width: 40%;
     height: auto;
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.footer{
-    background-color: #595959;
+.textoinvisible{
+    display: none;
 }
 
 .letrablanca{
