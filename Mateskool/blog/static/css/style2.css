@@ -1,5 +1,8 @@
 #imagenfondo{ 
     background-image: url("https://cdn.hipwallpaper.com/i/1/92/w2hPOo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .textoparrafo{
