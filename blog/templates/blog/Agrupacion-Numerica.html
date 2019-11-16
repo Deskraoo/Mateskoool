@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mateskool | Inicio</title>
+    <link rel="stylesheet" href="static/css/mdb.css">
+    <link rel="stylesheet" href="static/css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <script src="static/JS/jquery-3.4.1.min.js"></script>
+    <script src="static/JS/bootstrap.min.js"></script>
+</head>
+<header>
+    <!-- Barra de navegación -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong>Mateskool</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'inicio' %}">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Planes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item avatar">
+                    <a class="nav-link p-0" href="#">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+                        alt="avatar image" height="35">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Barra de navegación -->
+</header>
+<!-- Contenido -->
+<body  id="imagenfondo">
+    <blockquote class="blockquote text-center alineaciontitulo">
+        <p class="textotitulo">¡Agrupacion numerica!</p>            
+    </blockquote>
+    <div class="rounded-lg parrafo">
+        <p class="textoparrafo"> Cuando escribimos un número, la primera cifra por la derecha representa las unidades, la segunda por 
+            la derecha las decenas y la tercera por la derecha las centenas. Decena a un grupo formado por diez (10) unidades. Centena 
+            a un grupo formado por diez decenas o cien (100) unidades.          
+        </p>
+        <div class="row">
+            <div class="col-xs-12 col-lg-3 "></div>
+            <div class="col-xs-12 col-lg-6 ">
+                <img src="static/img/4Agrupacion/descomposicion.png" alt="" class="fotocen width90">  
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 "></div>
+        </div>
+        <p style=opacity:0>espacio</p>
+    </div>
+<!-- Contenido -->
+<!-- Footer -->
+<footer class="page-footer font-small footer1">
+
+    <hr>
+    
+    <!-- Registro -->
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+        <h5 class="mb-1 letrablanca">Unete a Mateskool</h5>
+        </li>
+        <li class="list-inline-item">
+        <a href="#!" class="btn btn-danger btn-rounded">Registrate</a>
+        </li>
+    </ul>
+    <!-- Registro -->
+    
+    <hr>
+    
+  <!-- Footer Elements -->
+  <div class="container">
+
+        <!-- Grid row-->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-lg-12">
+            <div>
+
+              <div class="col-lg-2"></div>
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <img src="static/img/iconos/Facebook.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <img src="static/img/iconos/Twitter.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <img src="static/img/iconos/GooglePlus.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <img src="static/img/iconos/LinkedIn.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <img src="static/img/iconos/Instagram.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <div class="col-lg-2"></div>
+            </div>
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row-->
+    
+      </div>
+      <!-- Footer Elements -->
+    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 letrablanca">© 2019 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> Mateskool.com</a>
+    </div>
+    <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+</body>
+</html>

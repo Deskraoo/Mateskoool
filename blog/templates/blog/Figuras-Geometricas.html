@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mateskool | Inicio</title>
+    <link rel="stylesheet" href="static/css/mdb.css">
+    <link rel="stylesheet" href="static/css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <script src="static/JS/jquery-3.4.1.min.js"></script>
+    <script src="static/JS/bootstrap.min.js"></script>
+</head>
+<header>
+    <!-- Barra de navegación -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong>Mateskool</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'inicio' %}">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Planes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item avatar">
+                    <a class="nav-link p-0" href="#">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+                        alt="avatar image" height="35">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Barra de navegación -->
+</header>
+<!-- Contenido -->
+<body  id="imagenfondo">
+    <blockquote class="blockquote text-center alineaciontitulo">
+        <p class="textotitulo">¡Figuras geometricas!</p>            
+    </blockquote>
+    <div class="rounded-lg parrafo">
+        <p class="textoparrafo"> ¿Cuáles son las figuras geométricas planas? ¿Qué características tienen? Estas son las preguntas 
+            que contestaremos en este post. Las principales figuras geométricas planas son:          
+        </p>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h2 class="textoparrafo"> 
+                    Circulo
+                </h2>
+                <img src="static/img/7Figuras/circulo1.png" alt="" class="fotocen width100">
+                <p class="textoparrafo"> 
+                    El círculo es una figura que se realiza trazando una curva que está siempre a la misma distancia de un punto que llamamos centro. La línea que bordea al círculo se llama circunferencia.
+                </p>
+            </div>                
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h2 class="textoparrafo"> 
+                    Triangulo
+                </h2>
+                <img src="static/img/7Figuras/triangulo1.png" alt="" class="fotocen width100">
+
+                <p class="textoparrafo">
+                    El triángulo es una figura que está formada por 3 rectas que se llaman lados. Hay diferentes maneras de clasificar a los triángulos, según sus lados o sus ángulos.
+                </p>
+            </div>                  
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h2 class="textoparrafo"> 
+                    Cuadrado
+                </h2>
+                <img src="static/img/7Figuras/cuadrado.gif" alt="" class="fotocen width100">
+                <p class="textoparrafo"> 
+                    Un cuadrado en geometría es un cuadrilátero regular, es decir, una figura plana de cuatro lados iguales y cuatro ángulos interiores rectos
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h2 class="textoparrafo"> 
+                    Rectangulo
+                </h2>
+                <img src="static/img/7Figuras/rectangulo.png" alt=""  class="fotocen width100">
+
+                <p class="textoparrafo"> 
+                        El rectángulo es una figura formada por 4 rectas llamadas lados. Las características de los rectángulos son que sus lados opuestos son paralelos y sus 4 ángulos miden 90º.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h2 class="textoparrafo"> 
+                    Trapecio
+                </h2>
+                <img src="static/img/7Figuras/trapecio2.png" alt="" class="fotocen width100">
+
+                <p class="textoparrafo"> 
+                        Figura geométrica de cuatro lados, de los cuales solo dos son paralelos.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h2 class="textoparrafo"> 
+                    Rombo
+                </h2>
+                <img src="static/img/7Figuras/rombo3.png" alt=""  class="fotocen width40">
+
+                <p class="textoparrafo"> 
+                        El rombo es una figura formada por 4 rectas. Sus lados opuestos son paralelos y los 4 miden igual pero a diferencia del cuadrado, no tiene ningún ángulo recto.
+                </p>
+            </div>
+        </div>
+    </div>
+        <p style=opacity:0>espacio</p>
+    </div>
+<!-- Contenido -->
+<!-- Footer -->
+<footer class="page-footer font-small footer1">
+
+    <hr>
+    
+    <!-- Registro -->
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+        <h5 class="mb-1 letrablanca">Unete a Mateskool</h5>
+        </li>
+        <li class="list-inline-item">
+        <a href="#!" class="btn btn-danger btn-rounded">Registrate</a>
+        </li>
+    </ul>
+    <!-- Registro -->
+    
+    <hr>
+    
+  <!-- Footer Elements -->
+  <div class="container">
+
+        <!-- Grid row-->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-lg-12">
+            <div>
+
+              <div class="col-lg-2"></div>
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <img src="static/img/iconos/Facebook.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <img src="static/img/iconos/Twitter.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <img src="static/img/iconos/GooglePlus.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <img src="static/img/iconos/LinkedIn.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <img src="static/img/iconos/Instagram.png" class="col-lg-2 col-xs-2" alt="">
+              </a>
+              <div class="col-lg-2"></div>
+            </div>
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row-->
+    
+      </div>
+      <!-- Footer Elements -->
+    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 letrablanca">© 2019 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> Mateskool.com</a>
+    </div>
+    <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+</body>
+</html>
