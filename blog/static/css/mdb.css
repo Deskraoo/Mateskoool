@@ -5,6 +5,10 @@
     background-position: center;
 }
 
+.carbon{
+    background-image: url(static/img/0inicio/carbon.jpg);
+}
+
 .textoparrafo{
     margin-left: 0.8%;
     margin-top: 0.3%;
