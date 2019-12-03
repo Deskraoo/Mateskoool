@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "New password set" %}{% endblock %}
+
+{% block content %}
+
+<section id="main" class="wrapper">
+    <div class="inner">
+        <!-- Elements -->
+        <h2 id="elements">Ingresa a tu cuenta</h2>
+        <div class="row 200% form-login">
+            <div class="12u">
+               
+				<div class="confirm-changes">
+					<p>{% trans "Tu contraseña ha sido modificada con éxito." %}</p>
+					<br>
+					<input type="button" name="accept" value="Aceptar" onClick="location.href='/accounts/login'">
+				</div>
+                
+            </div>
+
+        </div>
+</section>
+
+
+	
+{% endblock %}

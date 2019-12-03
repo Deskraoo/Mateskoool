@@ -14,6 +14,9 @@
     text-align: center;
 }
 
+.lapiz{
+    background: url(img/iconos/edit.png);
+}
 .parrafo{
     border: 0.2rem solid #595959;
     border-radius: 50%;
