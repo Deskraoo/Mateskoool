@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mateskool | Inicio</title>
+    <link rel="stylesheet" href="static/css/mdb.css">
+    <link rel="stylesheet" href="static/css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <script src="static/JS/jquery-3.4.1.min.js"></script>
+    <script src="static/JS/bootstrap.min.js"></script>
+</head>
+<header>
+    <!-- Barra de navegación -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="{% url 'inicio' %}"><strong>Mateskool</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'inicio' %}">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'post_list' %}">Planes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item avatar">
+                    <a class="nav-link p-0" href="{% url 'admin:index' %}">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+                        alt="avatar image" height="35">
+                    </a>
+                </li>
+            </ul>
+            <li class="list-inline-item">
+               <a href="{% url 'password_reset_recover' %}" class="btn btn-danger btn-rounded">Recuperación de contraseña</a>
+            </li>
+        </div>
+    </nav>
+    <!-- Barra de navegación -->
+</header>
+<!-- Contenido -->
+<body  id="imagenfondo">
+    <blockquote class="blockquote text-center alineaciontitulo">
+        <p class="textotitulo">Aprende Matematicas con nosotros</p>            
+    </blockquote>
+    <div class="rounded-lg parrafo">
+        <p class="textoparrafo"> Este curso contiene videos cortos de temas completos, dinámicos y con un método fácil con estrategias para resolver los problemas 
+            matemáticos a los que te enfrentas en tu vida escolar diaria. Los temas del curso se presentan en forma gradual de acuerdo a los programas establecidos 
+            por las instituciones de educación y a la práctica de la enseñanza en las matemáticas.
+        </p>
+    </div>
+    <blockquote class="blockquote text-center alineaciontitulo">
+        <p class="textotitulo ">Hechale un vistazo a lo que puedes aprender</p>            
+    </blockquote>
+    <div class="col-xs-12 col-lg-12">           
+        <div class="row">
+            <div class="col-xs-6 col-lg-3 rounded-lg zoom"><a href="{% url 'numeros' %}">
+                <div class="view overlay zoom">
+                    <img src="static/img/0inicio/numeros2.png" class="width100" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Números</p>
+                    </div>
+                </div></a></div>
+            <div class="col-xs-6 col-lg-3 rounded-lg zoom"><a href="{% url 'par_impar' %}">
+                <div class="view overlay zoom">                    
+                    <img src="static/img/0inicio/parimpar.png" class="width100" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Par Impar</p>
+                    </div>
+                </div></a></div>
+            <div class="col-xs-6 col-lg-3 rounded-lg zoom"><a href="{% url 'clasificacion_seriacion' %}">
+                <div class="view overlay zoom">                                    
+                    <img src="static/img/0inicio/seriacion.png" class="width100" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Seriación</p>
+                    </div>
+                </div></a></div>
+            <div class="col-xs-6 col-lg-3 rounded-lg zoom"><a href="{% url 'agrupacion_numerica' %}">
+                <div class="view overlay zoom">                                                    
+                    <img src="static/img/0inicio/agrupacion.png" class="width100" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Agrupación</p>
+                    </div>
+                </div></a></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-lg-3 rounded-lg zoom"><a href="{% url 'suma_resta' %}">
+                <div class="view overlay zoom">                                                                    
+                    <img src="static/img/0inicio/sumaresta.png" class="width100" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Suma-Resta</p>
+                    </div>
+                </div></a></div>
+            <div class="col-xs-6 col-lg-3 rounded-lg zoom"><a href="{% url 'multiplicacion_division' %}"> 
+                <div class="view overlay zoom">                                                                                   
+                    <img src="static/img/0inicio/divisionmulti.png" class="width100" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">División Multiplicación</p>
+                    </div>
+                </div></a></div>
+            <div class="col-xs-6 col-lg-3 rounded-lg zoom"><a href="{% url 'figuras_geometricas' %}">
+                <div class="view overlay zoom">                                                                                                   
+                    <img src="static/img/0inicio/figuras2.png" class="width100" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Figuras</p>
+                    </div>
+                </div></a></div>
+            <div class="col-xs-6 col-lg-3 rounded-lg zoom"><a href="{% url 'clasificacion_numerica' %}">
+                <div class="view overlay zoom">                                                                                                                   
+                    <img src="static/img/0inicio/clasificacion2.png" class="width100" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text">Clasificación Numerica</p>
+                    </div>
+                </div></a></div>
+        </div>
+    </div>
+<!-- Contenido -->
+<!-- Footer -->
+<footer class="page-footer font-small footer1">
+
+        <hr>
+
+    <!--Carousel Wrapper-->
+    <div class="row">
+    <div class="col-xs-1 col-lg-1"></div>
+    <div id="carousel-example-1z" class="carousel slide carousel-fade col-xs-10 col-lg-10" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <!--First slide-->
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="static/img/slider/Facebook.png" alt="First slide">
+          </div>
+          <!--/First slide-->
+          <!--Second slide-->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="static/img/slider/Instagram.png" alt="Second slide">
+          </div>
+          <!--/Second slide-->
+          <!--Third slide-->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="static/img/slider/Twitter.png" alt="Third slide">
+          </div>
+          <!--/Third slide-->
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+      <!--/.Carousel Wrapper-->
+    <div class="col-xs-1 col-lg-1"></div>
+    </div> 
+
+
+    <hr>
+    
+    <!-- Registro -->
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+        <h5 class="mb-1 letrablanca">Unete a Mateskool</h5>
+        </li>
+        <li class="list-inline-item">
+        <a href="{% url 'inicio' %}" class="btn btn-danger btn-rounded">Registrate</a>
+        </li>
+    </ul>
+    <!-- Registro -->
+    
+    <hr>
+    
+  <!-- Footer Elements -->
+  <div class="container">
+
+        <!-- Grid row-->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-lg-12">
+            <div>
+            <a class="fb-ic">
+            <img src="static/img/iconos/Facebook.png" class="col-lg-1 col-xs-2" alt="" style=opacity:0>
+            </a> 
+            <!-- Facebook -->
+            <a class="fb-ic">
+            <img src="static/img/iconos/Facebook.png" class="col-lg-2 col-xs-2" alt="">
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+            <img src="static/img/iconos/Twitter.png" class="col-lg-2 col-xs-2" alt="">
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+            <img src="static/img/iconos/GooglePlus.png" class="col-lg-2 col-xs-2" alt="">
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+            <img src="static/img/iconos/LinkedIn.png" class="col-lg-2 col-xs-2" alt="">
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+            <img src="static/img/iconos/Instagram.png" class="col-lg-2 col-xs-2" alt="">
+            </a>
+              <div class="col-lg-2"></div>
+            </div>
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row-->
+    
+      </div>
+      <!-- Footer Elements -->
+    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 letrablanca">© 2019 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> Mateskool.com</a>
+    </div>
+    <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+</body>
+</html>

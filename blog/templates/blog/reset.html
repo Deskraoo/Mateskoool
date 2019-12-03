@@ -1,0 +1,33 @@
+{% extends 'blog/base.html' %} {% load i18n %} {% block content %}
+<section id="main" class="wrapper">
+	<div class="inner">
+		<!-- Elements -->
+		
+		<div class="row 200% form-login">
+			<div class="12u">
+
+
+				<div class="new-pass">
+					<br>
+					<h1>Recuperación de contraseña:</h1>
+					<br> {% if invalid %}{% url "password_reset_recover" as recovery_url %}
+					<p>{% blocktrans %}Lo sentimos, el link de recuperación de contraseña es inválido. Aún puedes <a href="{{ recovery_url }}">solicitar
+							uno nuevo</a>.{% endblocktrans %}</p>
+					{% else %}
+					<p>{% blocktrans %}Hola, <strong>{{ username }}</strong>. Por favor escoge tu nueva contraseña:{% endblocktrans %}</p>
+					<br>
+					<form method="post" action="{% url 'password_reset_reset' token %}">
+						{% csrf_token %} {{ form.as_p }}
+						<br>
+						<p><input type="submit" name="submit" value="{% trans 'Enviar' %}"></p>
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+</section>
+
+
+
+{% endif %} {% endblock %}
