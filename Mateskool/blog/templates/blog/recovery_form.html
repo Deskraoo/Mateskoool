@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %} 
+{% load i18n %} {% block title %}{% trans "Password recovery" %}
+{% endblock %}
+{% block content %}
+
+<section id="main" class="wrapper letrablanca">
+	<div class="inner">
+		<!-- Elements -->
+		<h2 id="elements">
+			<h1>Recupera tu contraseña</h1>
+		</h2>
+		<div class="row 200% form-login">
+			<div class="12u">
+				<form method="post" action="{{ url }}">
+					{% csrf_token %} {{ form.as_p }}
+					<br>
+					<p><input type="submit" name="pass-recover" value="{% trans 'Recuperar mi contraseña' %}"></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+{% endblock %}
